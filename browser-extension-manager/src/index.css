@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-neutral-900: #091540;
+    --color-neutral-800: #202535;
+    --color-neutral-700: #2F364B;
+    --color-neutral-600: #535868;
+    --color-neutral-300: #C6C6C6;
+    --color-neutral-200: #D6E2F5;
+    --color-neutral-100: #EEE;
+    --color-neutral-0: #FBFDFE;
+
+    --color-red-400: #F25C54;
+    --color-red-500: #DE4840;
+    --color-red-700: #C7231A;
+
+    
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./assets/fonts/static/NotoSans-Regular.ttf') format('truetype');
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./assets/fonts/static/NotoSans-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('./assets/fonts/static/NotoSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@layer components {
+  .text-preset1 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+  .text-preset2 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+  }
+  .text-preset3 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+  }
+  .text-preset4 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: medium;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.3px;
+  }
+  .text-preset5 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+  }
+  .text-preset6 {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+  }
+}
+
+:root {
+  --linear-gradient: 180deg, #EBF2FC 0%, #EEFBF9 100%;
+  --dark-gradient: 180deg, #04091B 0%, #091540 100%;
+}
