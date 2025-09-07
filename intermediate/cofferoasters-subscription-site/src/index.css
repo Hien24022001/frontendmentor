@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-dark-cyan: #0e8784;
+  --color-dark-grey-blue: #333d4b;
+  --color-light-cream: #fefcf7;
+  --color-grey: #83888f;
+}
+
+body {
+  background-color: #fefcf7;
+}
+
+@layer components {
+  .text-preset-1 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0px;
+  }
+  .text-preset-2 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0px;
+  }
+  .text-preset-3 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0px;
+  }
+  .text-preset-4 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  .title-alternate-big {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0px;
+    text-transform: lowercase;
+  }
+  .text-body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .gradient-menu {
+    background: linear-gradient(180deg, rgba(254,252,247,1), rgba(254,252,247,0.5));
+  }
+  .btn {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    color: #fefcf7;
+    background-color: #0e8784;
+    border-radius: 6px;
+    height: 56px;
+  }
+}
+
+.home-hero {
+  background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
