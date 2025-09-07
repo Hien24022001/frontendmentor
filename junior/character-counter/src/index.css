@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neutral-900: #12131A;
+  --color-neutral-800: #21222C;
+  --color-neutral-700: #2A2B37;
+  --color-neutral-600: #404254;
+  --color-neutral-200: #E4E4EF;
+  --color-neutral-100: #F2F2F7;
+  --color-neutral-0: #FFF;
+
+  --color-blue-400: #D3A0FA;
+  --color-blue-500: #C27CF8;
+
+  --color-yellow-500: #FF9F00;
+
+  --color-orange-500: #FE8159;
+  --color-orange-800: #DA3701;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/DM_Sans/static/DMSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/DM_Sans/static/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DMSans";
+  src: url("./assets/fonts/DM_Sans/static/DMSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@layer components {
+  .text-preset-1 {
+    font-family: "DMSans", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+  .text-preset-1-mobile {
+    font-family: "DMSans", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+  .text-preset-2 {
+    font-family: "DMSans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -1px;
+  }
+  .text-preset-3 {
+    font-family: "DMSans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.6px;
+  }
+  .text-preset-4 {
+    font-family: "DMSans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.6px;
+  }
+}
+
